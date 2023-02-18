@@ -38,12 +38,12 @@ cost = {1: 'A, E, I, O, U, L, N, S, T, R, А, В, Е, И, Н, О, Р, С, Т',
 10: 'Q, Z, Ф, Щ, Ъ'
 }
 text = str(input('Введите слово: ')).upper()
-result = ''
+result = 0
 
 for i in text:
     for (id, val) in cost.items():
         if i in val:
-            result += str(id)
+            result += id
         
-print(result)
+print('Стоимость слова: ',result)
 
